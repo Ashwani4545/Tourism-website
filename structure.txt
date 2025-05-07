@@ -1,0 +1,48 @@
+/tourism_website
+│── /assets
+│   ├── /css
+│   │   ├── style.css  # Main stylesheet
+│   ├── /js
+│   │   ├── script.js  # Custom JavaScript
+│   ├── /images
+│   │   ├── museums.jpg
+│   │   ├── emergency.jpg
+│   ├── /bootstrap
+│   │   ├── bootstrap.min.css
+│   │   ├── bootstrap.bundle.min.js
+│
+│── /config
+│   ├── db_connect.php  # Database connection file
+│
+│── /includes
+│   ├── header.php  # Contains navigation and branding
+│   ├── footer.php  # Contains footer content
+│
+│── /pages
+│   ├── temples.php      # Page for temples
+│   ├── ghats.php        # Page for ghats
+│   ├── museums.php      # Page for museums
+│   ├── emergency.php    # Page for emergency services
+│   ├── hotels.php       # Page to list hotels
+│   ├── book_cab.php     # Cab booking page
+│   ├── book_ferry.php   # Ferry booking page
+│   ├── book_tour.php    # Tour booking page
+│   ├── confirm_booking.php # Booking confirmation
+│
+│── /admin  ✅ *Admin Panel*
+│   ├── index.php
+│   ├── login.php
+│   ├── dashboard.php
+│   ├── manage_attractions.php
+│   ├── manage_users.php
+│   ├── logout.php
+│
+│── index.php  ✅ *Home Page*
+│── attractions.php  # Section listing all attractions
+│── services.php  # Section listing services
+│── contact.php  # Contact page
+│── register.php  # User registration
+│── login.php  # User login
+│── admin.php  ✅ *Admin Login Page*
+│── .htaccess  # For URL rewriting and security
+│── README.md  # Documentation

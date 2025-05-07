@@ -1,0 +1,26 @@
+# .htaccess - URL Rewriting and Security
+
+# Enable URL rewriting
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+# Prevent directory listing
+Options -Indexes
+
+# Restrict access to sensitive files
+<FilesMatch "(config\.php|db_connect\.php|login_process\.php|register_process\.php|admin/login_process\.php)">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Set default file
+DirectoryIndex index.php
+
+# Secure admin panel (optional)
+<Directory "/admin">
+    AuthType Basic
+    AuthName "Restricted Access"
+    Require valid-user
+</Directory>
