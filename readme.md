@@ -1,61 +1,190 @@
-# Tourism Website
+# 🌍 Tourism Website – PHP Based Web Application
 
-## Overview
-This is a fully functional tourism website that allows users to explore attractions, book services, and access an admin panel for management.
+## 📌 Project Overview
 
-## Features
-- **User Panel**: View attractions, book cabs, ferries, and tours.
-- **Admin Panel**: Manage users, attractions, and bookings.
-- **Authentication**: Secure login system for users and admins.
-- **Responsive Design**: Built with Bootstrap for mobile-friendliness.
-- **Security**: `.htaccess` protection for sensitive files.
+This project is a **PHP-based Tourism Website** designed to provide users with information about tourist attractions, hospitality services, and booking-related features.  
+The platform allows visitors to explore destinations, view services, contact administrators, and (optionally) make bookings, while administrators can manage site content through an admin panel.
 
-## Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-repo/tourism-website.git
-   ```
-2. Move into the project directory:
-   ```sh
-   cd tourism-website
-   ```
-3. Set up the database:
-   - Import `database.sql` into your MySQL database.
-   - Update `config/db_connect.php` with your database credentials.
+The project is suitable for:
+- Academic / college projects
+- PHP & MySQL practice
+- Tourism / travel website prototypes
+- Web development portfolios
 
-4. Start a local server (using XAMPP, WAMP, or MAMP).
+---
 
-5. Open the website in a browser:
-   ```sh
-   http://localhost/tourism-website/
-   ```
+## 🎯 Objectives
 
-## Admin Access
-- Admin login: `http://localhost/tourism-website/admin.php`
-- Default Admin Credentials:
-  - **Email**: `admin@example.com`
-  - **Password**: `admin123`
+- Provide a centralized tourism information platform
+- Showcase tourist attractions and hospitality services
+- Enable user registration and login
+- Support booking-related workflows
+- Offer an admin panel for content management
+- Demonstrate full-stack PHP web development
 
-## File Structure
+---
+
+## 🏗️ Technology Stack
+
+| Layer | Technology |
+|------|------------|
+| Frontend | HTML, CSS, JavaScript |
+| Styling | CSS / Bootstrap (via assets) |
+| Backend | PHP |
+| Database | MySQL |
+| Server | Apache (XAMPP / WAMP / LAMP) |
+
+---
+
+## 📂 Project Structure
+
 ```
-/tourism_website
-│── /assets
-│── /includes
-│── /pages
-│── /admin
-│── index.php
-│── attractions.php
-│── services.php
-│── contact.php
-│── register.php
-│── login.php
-│── admin.php
-│── .htaccess
-│── README.md
+tourism_website/
+│
+├── admin/                 # Admin dashboard & management files
+├── assets/                # CSS, JS, images, static resources
+├── booking/               # Booking-related modules
+├── config/                # Database & configuration files
+├── includes/              # Header, footer, common PHP includes
+├── pages/                 # Static/dynamic content pages
+├── public/                # Publicly accessible resources
+│
+├── index.php              # Home page
+├── attractions.php        # Tourist attractions page
+├── hospitality.php        # Hotels / hospitality services
+├── services.php           # Services offered
+├── contact.php            # Contact page
+├── contact_process.php    # Contact form backend logic
+│
+├── login.php              # User login page
+├── register.php           # User registration page
+├── register_process.php   # Registration backend logic
+├── subscribe.php          # Newsletter subscription
+│
+├── admin.php              # Admin login / entry
+├── structure.txt          # Project structure reference
+├── .gitignore             # Git ignored files
+├── .htacces               # Apache configuration
+└── readme.md              # (Old / basic readme)
 ```
 
-## Contributing
-Feel free to submit issues or pull requests to improve the project.
+---
 
-## License
-This project is open-source and available under the MIT License.
+## 👥 User Roles
+
+### 👤 Visitor / User
+- View tourist attractions
+- Explore hospitality and services
+- Register & login
+- Contact website administrators
+- Subscribe to updates
+
+### 🛠️ Admin
+- Manage tourism content
+- Control services & attractions
+- Handle user queries
+- Monitor bookings (if enabled)
+
+---
+
+## 🔑 Key Features
+
+- Responsive tourism website layout
+- User authentication (login & registration)
+- Tourist attraction listings
+- Hospitality & services pages
+- Contact form with backend processing
+- Admin panel for site management
+- Modular PHP file structure
+- Deployment guide included
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Prerequisites
+- PHP 7.x or higher
+- MySQL
+- Apache Server
+- XAMPP / WAMP / LAMP recommended
+
+---
+
+### 2️⃣ Setup Steps
+
+1. Clone or download the project  
+2. Move the project folder to:
+   ```
+   htdocs/   (XAMPP)
+   www/      (WAMP)
+   ```
+3. Create a MySQL database
+4. Update database credentials inside:
+   ```
+   /config/
+   ```
+5. Import database tables if SQL file is provided
+6. Start Apache & MySQL
+7. Open browser and visit:
+   ```
+   http://localhost/tourism_website/
+   ```
+
+---
+
+## 🚀 Deployment
+
+A **deployment guide** is included in the project:
+
+```
+Deployment Guide for Your PHP Website.docx
+```
+
+You can deploy this project on:
+- Shared hosting
+- VPS
+- Localhost (XAMPP/WAMP)
+
+---
+
+## 🔒 Security Considerations
+
+- Use prepared statements to prevent SQL injection
+- Validate all form inputs
+- Secure admin panel with authentication
+- Configure `.htaccess` properly
+- Hash passwords before storing them
+
+---
+
+## 📈 Future Enhancements
+
+- Online booking & payment gateway
+- Google Maps integration
+- Admin analytics dashboard
+- User reviews & ratings
+- Email notifications
+- REST API support
+- Modern UI using React or Vue
+
+---
+
+## 📜 License
+
+This project is open for academic and learning purposes.  
+Refer to repository license if provided.
+
+---
+
+## 👨‍💻 Author
+
+**Ashwani Pandey**  
+Web Developer | PHP & Full‑Stack Enthusiast
+
+---
+
+## 📞 Support
+
+For improvements or issues:
+- Open an issue in the repository
+- Contact the project maintainer
