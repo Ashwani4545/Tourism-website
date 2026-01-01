@@ -179,7 +179,6 @@ Refer to repository license if provided.
 ## 👨‍💻 Author
 
 **Ashwani Pandey**  
-Web Developer | PHP & Full‑Stack Enthusiast
 
 ---
 
