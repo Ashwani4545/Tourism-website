@@ -178,7 +178,7 @@ Refer to repository license if provided.
 
 ## 👨‍💻 Author
 
-**Ashwani Pandey**  
+**Ashwani Pandey**  - **ashwanipandey4545@gmail.com**
 
 ---
 
